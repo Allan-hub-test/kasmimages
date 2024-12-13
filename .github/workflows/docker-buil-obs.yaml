@@ -30,9 +30,9 @@ jobs:
       # Étape 4 : Construire l'image Docker
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/obs-docker-image:v1.0 ./kasmimages
+          docker build -t ghcr.io/${{ github.repository | toLowercase() }}/obs-docker-image:v1.0 ./kasmimages
 
       # Étape 5 : Pousser l'image Docker vers GitHub Container Registry
       - name: Push Docker image to GitHub Container Registry
         run: |
-          docker push ghcr.io/${{ github.repository }}/obs-docker-image:v1.0 
+          docker push ghcr.io/${{ github.repository | toLowercase() }}/obs-docker-image:v1.0 
