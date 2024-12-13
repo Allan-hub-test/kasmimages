@@ -1,4 +1,4 @@
-FROM kasmweb\ubuntu-focal-dind:1.16.0-rolling-daily
+FROM kasmweb\ubuntu-focal-dind:latest
 
 RUN apt-get update -y && apt-get install -y software-properties-common wget ca-certificates gnupg
 
