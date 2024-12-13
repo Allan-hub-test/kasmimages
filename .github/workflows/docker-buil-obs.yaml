@@ -33,7 +33,7 @@ jobs:
       # Étape 5 : Construire l'image Docker avec le tag v1.0
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ env.REPO_NAME }}/obs-docker-image:v1.0 ./kasmimages
+          docker build -t ghcr.io/${{ env.REPO_NAME }}/obs-docker-image:v1.0 .
 
       # Étape 6 : Pousser l'image Docker vers GitHub Container Registry
       - name: Push Docker image to GitHub Container Registry
