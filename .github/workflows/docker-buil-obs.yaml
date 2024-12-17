@@ -7,8 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Cette action s'exécutera sur un environnement Ubuntu
-
+    runs-on: ubuntu-24.04  # Cette action s'exécutera sur un environnement Ubuntu
     steps:
       # Étape 1 : Vérification du code source
       - name: Checkout code
